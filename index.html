@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Қыз ұзату Ademi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- 🔹 Фото -->
+        <section class="photo-section">
+            <div class="overlay">
+                <img src="img/Ademi.jpg" alt="Фото Ademi" class="main-photo">
+                <div class="text-overlay">
+                    <h1>Әдемі</h1>
+                    <h2>Қыз ұзату</h2>
+                    <p>22 | 11 | 2025</p>
+                    <div class="music-player">
+                        <button id="playBtn">▶</button>
+                        <audio id="bgMusic" src="music/song.mp3"></audio>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🔹 Приглашение -->
+        <section class="invitation">
+            <h2>Құрметті қонақтар!</h2>
+            <p>Сіздерді қызымыздың "Қыз ұзату" салтанатының құрметті қонағы болуға шақырамыз</p>
+            <h3 class="guest-name">Қыз ұзату күні:</h3>
+        </section>
+
+        <!-- 🔹 Календарь -->
+        <section class="calendar">
+            <p class="date-text">22 Қараша 2025 жыл</p>
+            <table>
+                <tr><th>ДС</th><th>СС</th><th>СР</th><th>БС</th><th>ЖМ</th><th>СБ</th><th>ЖС</th></tr>
+                <tr><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+                <tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td></tr>
+                <tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td></tr>
+                <tr><td>20</td><td>21</td><td class="highlight">22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr>
+            </table>
+            <p class="time">Басталуы сағат 17:00-де</p>
+        </section>
+
+        <!-- 🔹 Программа -->
+        <section class="program">
+            <h3>Іс-шара бағдарламасы:</h3>
+            <ul>
+                <li><span>16:30</span> — Қонақтарды жинау</li>
+                <li><span>17:00</span> — Қыз ұзатудың басталуы</li>
+                <li><span>21:00</span> — Шығарып салу</li>
+            </ul>
+        </section>
+
+        <!-- Адрес -->
+        <section class="address">
+            <h3>Біздің мекен-жайымыз:</h3>
+            <p>
+                г. Алматы, с. Байсерке, Илийский район,<br>Улица Аркабая, 282а/1<br>ресторан "Elite Grand Hall"
+            </p>
+            <a href="https://2gis.kz/almaty/firm/70000001100536074/77.045059%2C43.510754?m=77.045176%2C43.511147%2F17.54%2Fp%2F5.46%2Fr%2F-11.27"
+               target="_blank" rel="noopener">
+                <img src="https://static-maps.yandex.ru/1.x/?ll=77.045059,43.510754&size=600,400&z=17&l=map&pt=77.045059,43.510754,pm2rdm"
+                     alt="Карта — открыть в 2ГИС"
+                     style="width:100%;max-width:800px;border-radius:8px;display:block">
+            </a>
+        </section>
+
+        <!-- 🔹 Родители -->
+        <section class="parents">
+            <p>Құрметпен,</p>
+            <h3>Адильбек — Гульжан</h3>
+        </section>
+
+        <!-- 🔹 Форма RSVP -->
+        <section class="rsvp">
+            <h3>Қыз ұзатуда өз қатысуыңызды растаңыз</h3>
+            <form id="rsvpForm">
+                <input type="text" id="name" placeholder="Ваше имя" required>
+                <label><input type="radio" name="attendance" value="Конечно приду" required> Конечно приду</label>
+                <label><input type="radio" name="attendance" value="Приду с парой"> Приду с парой</label>
+                <label><input type="radio" name="attendance" value="К сожалению не смогу"> К сожалению не смогу</label>
+
+                <button type="submit" id="sendToWhatsApp">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="whatsapp" class="whatsapp-icon">
+                    Отправить
+                </button>
+
+                <p id="formMsg"></p>
+            </form>
+        </section>
+
+        <!-- 🔹 Социальные сети -->
+        <section class="socials">
+            <h3>Байланыс:</h3>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/_adil_ace_/" target="_blank" rel="noopener" class="social-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+                </a>
+                <a href="https://t.me/manasadil" target="_blank" rel="noopener" class="social-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+                </a>
+            </div>
+        </section>
+
+    </div> <!-- /.container -->
+    <!-- Подключаем отлаженный скрипт -->
+    <script src="script.js"></script>
+</body>
+</html>

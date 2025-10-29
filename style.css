@@ -1,0 +1,316 @@
+﻿body {
+    margin: 0;
+    font-family: "Georgia", serif;
+    background: #f9f7f5 url("img/bg.png") no-repeat center top;
+    background-size: cover;
+    color: #2f3b1a;
+    text-align: center;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/*.photo-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* чтобы заняло весь экран 
+overflow: hidden;*/
+}
+
+.main-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* чтобы фото не обрезалось */
+    filter: brightness(0.8); /* немного затемняет фото для читаемости текста */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-family: 'Georgia', serif;
+}
+
+.text-overlay h1 {
+  font-size: 48px;
+  color: #30542f;
+  font-family: 'Great Vibes', cursive;
+}
+
+.text-overlay h2 {
+  font-size: 20px;
+  margin-top: -10px;
+  color: #f3e2b3;
+  letter-spacing: 2px;
+}
+
+.text-overlay p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.play-btn {
+  border: 2px solid #f3e2b3;
+  background: transparent;
+  color: #f3e2b3;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.play-btn:hover {
+  background: #f3e2b3;
+  color: #30542f;
+}
+
+
+.name {
+    font-family: "Great Vibes", cursive;
+    font-size: 48px;
+    color: #355e2b;
+    margin-top: 15px;
+}
+
+.subtitle {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #b08a47;
+}
+
+.date {
+    color: #b08a47;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.music-player {
+    margin: 10px 0;
+}
+
+    .music-player button {
+        background: #fff;
+        border: 2px solid #b08a47;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        cursor: pointer;
+        color: #b08a47;
+    }
+
+.invitation h2 {
+    color: #2f3b1a;
+    margin-top: 30px;
+}
+
+.invitation p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 0 20px;
+}
+
+.guest-name {
+    font-family: "Great Vibes", cursive;
+    font-size: 36px;
+    color: #b08a47;
+}
+
+.calendar {
+    margin-top: 20px;
+}
+
+    .calendar table {
+        width: 90%;
+        margin: 10px auto;
+        border-collapse: collapse;
+    }
+
+    .calendar th, .calendar td {
+        padding: 8px;
+        font-size: 15px;
+    }
+
+    .calendar .highlight {
+        background: #b08a47;
+        color: #fff;
+        border-radius: 50%;
+    }
+
+.program {
+    margin-top: 30px;
+}
+
+    .program ul {
+        list-style: none;
+        padding: 0;
+        font-size: 16px;
+    }
+
+    .program li {
+        margin: 8px 0;
+    }
+
+    .program span {
+        color: #b08a47;
+        font-weight: bold;
+    }
+
+.address {
+    margin-top: 30px;
+    font-size: 17px;
+}
+
+.parents {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2f3b1a;
+}
+
+.rsvp {
+    margin-top: 40px;
+}
+
+    .rsvp input[type="text"] {
+        width: 80%;
+        padding: 10px;
+        border: 1px solid #2f3b1a;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .rsvp label {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .rsvp button {
+        background: #355e2b;
+        color: #fff;
+        border: none;
+        padding: 10px 40px;
+        border-radius: 30px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+#formMsg {
+    margin-top: 10px;
+    font-size: 16px;
+}
+/* === Блок: Фото + Текст поверх === */
+.photo-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 0; /* убираем отступ снизу */
+    padding-bottom: 0; /* убираем возможные внутренние отступы */
+}
+
+
+.main-photo {
+    width: 100%;
+    height: auto; /* теперь фото само регулирует высоту */
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-family: 'Georgia', serif;
+}
+
+    .text-overlay h1 {
+        font-size: 48px;
+        color: #30542f;
+        font-family: 'Great Vibes', cursive;
+    }
+
+    .text-overlay h2 {
+        font-size: 20px;
+        margin-top: -10px;
+        color: #f3e2b3;
+        letter-spacing: 2px;
+    }
+
+    .text-overlay p {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+.play-btn {
+    border: 2px solid #f3e2b3;
+    background: transparent;
+    color: #f3e2b3;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/* 🔹 Социальные сети */
+.socials {
+    margin-top: 40px;
+    text-align: center;
+}
+
+    .socials h3 {
+        color: #2f3b1a;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-link img {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-link:hover img {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(176, 138, 71, 0.5);
+}
+/* 🔹 Иконка WhatsApp — стиль как у приложения */
+.whatsapp-icon {
+    width: 18px; /* чуть меньше */
+    height: 18px;
+    border-radius: 4px; /* лёгкое скругление, как у иконок приложений */
+    object-fit: cover;
+    background-color: white; /* добавляет аккуратную белую подложку */
+    padding: 2px; /* создаёт «рамку» вокруг */
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); /* лёгкая тень */
+    transition: transform 0.3s;
+}
+
+#sendToWhatsApp:hover .whatsapp-icon {
+    transform: rotate(10deg) scale(1.1);
+}
+
+
+    .play-btn:hover {
+        background: #f3e2b3;
+        color: #30542f;
+    }
+/* === Конец блока === */
