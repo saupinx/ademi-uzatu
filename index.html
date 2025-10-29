@@ -124,9 +124,91 @@
 
     </div> <!-- /.container -->
     <!-- Подключаем отлаженный скрипт -->
+    <!-- 🔹 Кнопки вверх/вниз -->
+<button id="scrollTopBtn" class="scroll-btn up">⬆</button>
+<button id="scrollBottomBtn" class="scroll-btn down">⬇</button>
+
+<style>
+/* === Кнопки вверх/вниз === */
+.scroll-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+  z-index: 1000;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background-color: #b21e2e;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.scroll-btn.down {
+  bottom: 20px;
+}
+
+.scroll-btn:hover {
+  transform: scale(1.1);
+  background-color: #d82d40;
+}
+
+.scroll-btn.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* 🔹 Адаптация для телефона */
+@media (max-width: 768px) {
+  .scroll-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    right: 15px;
+  }
+}
+</style>
+
+<script>
+// === Кнопки вверх и вниз ===
+const scrollTopBtn = document.getElementById('scrollTopBtn');
+const scrollBottomBtn = document.getElementById('scrollBottomBtn');
+
+// Показать кнопки при прокрутке
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 200) {
+    scrollTopBtn.classList.add('show');
+  } else {
+    scrollTopBtn.classList.remove('show');
+  }
+
+  if (window.scrollY < document.body.scrollHeight - window.innerHeight - 200) {
+    scrollBottomBtn.classList.add('show');
+  } else {
+    scrollBottomBtn.classList.remove('show');
+  }
+});
+
+// Прокрутка вверх
+scrollTopBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Прокрутка вниз
+scrollBottomBtn.addEventListener('click', () => {
+  window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+});
+</script>
+
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
